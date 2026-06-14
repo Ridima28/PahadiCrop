@@ -1,6 +1,5 @@
 import React from 'react';
-import { Leaf } from 'lucide-react';
-import { Twitter, MessageCircle, Github, Globe } from 'lucide-react';
+import { Leaf, MessageCircle, Globe, Mail, Send } from 'lucide-react';
 
 const footerLinks = {
   Product: ['Chat with AI', 'Features', 'How It Works', 'Pricing'],
@@ -8,9 +7,14 @@ const footerLinks = {
   Contact: ['Email Us', 'Feedback', 'Report Issue', 'Join Collective'],
 };
 
+const socialIcons = [Send, MessageCircle, Mail, Globe];
+
 export default function Contact() {
   return (
-    <footer id="footer" className="bg-gray-50 dark:bg-gray-900/50 border-t border-gray-100 dark:border-gray-800">
+    <footer
+      id="footer"
+      className="bg-gray-50 dark:bg-gray-900/50 border-t border-gray-100 dark:border-gray-800"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           <div className="sm:col-span-2">
@@ -23,14 +27,18 @@ export default function Contact() {
                 <span className="text-[10px] gradient-text font-semibold ml-1">AI</span>
               </div>
             </div>
+
             <p className="text-sm text-gray-600 dark:text-gray-400 max-w-xs mb-5 leading-relaxed">
-              AI-powered agricultural advisory for Uttarakhand's mountain farmers. Built by Mandakini Organic Produce Collective.
+              AI-powered agricultural advisory for Uttarakhand&apos;s mountain farmers. Built by
+              Mandakini Organic Produce Collective.
             </p>
+
             <div className="flex items-center gap-3">
-              {[Twitter, MessageCircle, Github, Globe].map((Icon, i) => (
+              {socialIcons.map((Icon, i) => (
                 <a
-                  key={i} 
+                  key={i}
                   href="#"
+                  aria-label={`Social link ${i + 1}`}
                   className="w-9 h-9 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center text-gray-500 hover:text-emerald-600 hover:border-emerald-300 transition-all"
                 >
                   <Icon size={15} />
@@ -43,9 +51,12 @@ export default function Contact() {
             <div key={title}>
               <h4 className="font-semibold text-sm text-foreground mb-4">{title}</h4>
               <ul className="space-y-2.5">
-                {links.map(link => (
+                {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-sm text-gray-500 dark:text-gray-500 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">
+                    <a
+                      href="#"
+                      className="text-sm text-gray-500 dark:text-gray-500 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors"
+                    >
                       {link}
                     </a>
                   </li>

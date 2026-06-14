@@ -13,7 +13,6 @@ export default function Home() {
       <Navbar />    
       <About />
       <Features />
-      {/* <Contact /> */}
     </div>
   );
 }   
