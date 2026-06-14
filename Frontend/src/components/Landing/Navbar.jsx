@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Leaf, Cpu, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 
 const navLinks = [
   { label: 'Home', href: '#hero' },
@@ -35,13 +36,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-18">
-          <a href="#hero" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-md shadow-emerald-500/25">
-              <Leaf size={16} className="text-white" />
-            </div>
+          <a href="#hero" className="flex items-center gap-1.5 group">
+
+    <img src={logo} alt="PahadiCrop Logo" className="h-14 w-auto"/>            
             <div>
               <span className="font-heading font-bold text-base text-foreground">PahadiCrop</span>
-              <span className="text-[10px] bg-gradient-to-r from-emerald-600 to-sky-500 bg-clip-text text-transparent font-semibold ml-1">AI</span>
+
             </div>
           </a>
 
