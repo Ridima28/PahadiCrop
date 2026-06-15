@@ -58,10 +58,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <Link to="/login">
-        <button className="px-3 py-1.5 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
-        Login</button>
-            </Link>
+
             <Link to="/chat">
         <button className="inline-flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white shadow-md shadow-emerald-500/20 transition">
 
