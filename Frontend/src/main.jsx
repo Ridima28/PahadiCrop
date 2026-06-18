@@ -6,10 +6,12 @@ import './App.css'
 import { AppContextProvider } from './context/AppContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppContextProvider>
+
     <BrowserRouter>
+    <AppContextProvider>
       <App />
+      </AppContextProvider>
 </BrowserRouter>
-</AppContextProvider>
+
   </StrictMode>,
 )

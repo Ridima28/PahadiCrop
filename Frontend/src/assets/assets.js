@@ -1,6 +1,3 @@
-import logo from "./logo.svg";
-import logo_full from "./logo_full.svg";
-import logo_full_dark from "./logo_full_dark.svg";
 import search_icon from "./search_icon.svg";
 import user_icon from "./user_icon.svg";
 import theme_icon from "./theme_icon.svg";
@@ -14,22 +11,9 @@ import logout_icon from "./logout_icon.svg";
 import diamond_icon from "./diamond_icon.svg";
 import gallery_icon from "./gallery_icon.svg";
 
-import ai_image1 from "./ai_image1.jpg";
-import ai_image2 from "./ai_image2.jpg";
-import ai_image3 from "./ai_image3.jpg";
-import ai_image4 from "./ai_image4.jpg";
-import ai_image5 from "./ai_image5.jpg";
-import ai_image6 from "./ai_image6.jpg";
-import ai_image7 from "./ai_image7.jpg";
-import ai_image8 from "./ai_image8.jpg";
-import ai_image9 from "./ai_image9.jpg";
-import ai_image10 from "./ai_image10.jpg";
-import ai_image11 from "./ai_image11.jpg";
-import ai_image12 from "./ai_image12.jpg";
 
 export const assets = {
-    logo,
-    logo_full,
+
     search_icon,
     user_icon,
     theme_icon,
@@ -40,7 +24,6 @@ export const assets = {
     close_icon,
     bin_icon,
     logout_icon,
-    logo_full_dark,
     diamond_icon,
     gallery_icon
 };
@@ -54,29 +37,7 @@ export const dummyUserData = {
 }
 
 // copy for server controllers
-export const dummyPlans = [
-    {
-        _id: "basic",
-        name: "Basic",
-        price: 10,
-        credits: 100,
-        features: ['100 text generations', '50 image generations', 'Standard support', 'Access to basic models']
-    },
-    {
-        _id: "pro",
-        name: "Pro",
-        price: 20,
-        credits: 500,
-        features: ['500 text generations', '200 image generations', 'Priority support', 'Access to pro models', 'Faster response time']
-    },
-    {
-        _id: "premium",
-        name: "Premium",
-        price: 30,
-        credits: 1000,
-        features: ['1000 text generations', '500 image generations', '24/7 VIP support', 'Access to premium models', 'Dedicated account manager']
-    }
-];
+
 
 
 export const dummyChats = [
@@ -93,13 +54,7 @@ export const dummyChats = [
                 "content": "a boy running on water",
                 "timestamp": 1755178179612,
             },
-            {
-                "isImage": true,
-                "isPublished": true,
-                "role": "assistant",
-                "content": ai_image11,
-                "timestamp": 1755178194747,
-            }
+
         ],
         "createdAt": "2025-08-14T13:29:31.398Z",
         "updatedAt": "2025-08-14T13:29:54.753Z",
@@ -130,13 +85,7 @@ export const dummyChats = [
                 "content": "Generate a image of boy talking with others",
                 "timestamp": 1755107475040,
             },
-            {
-                "isImage": true,
-                "isPublished": true,
-                "role": "assistant",
-                "content": ai_image1,
-                "timestamp": 1755107486680,
-            },
+
             {
                 "isImage": false,
                 "isPublished": false,
@@ -158,13 +107,7 @@ export const dummyChats = [
                 "content": "Ultra-realistic, hyper-detailed photorealistic jungle landscape teeming with wildlife. The setting is a dense, vibrant rainforest bathed in dappled sunlight filtering through the thick canopy. Towering ancient trees with intricate root systems, lush green ferns, vines, and exotic flowers create a rich, immersive environment. A clear, sparkling stream winds through the scene, reflecting the lush surroundings.  Wildlife in their natural habitat:  A majestic Bengal tiger crouches on a moss-covered rock near the water, muscles tensed as it watches for prey. A family of elephants moves gently through the undergrowth, led by a large matriarch with a protective stance. Colorful macaws and parrots perch on high branches, their bright feathers contrasting with the greenery. A stealthy jaguar lurks in the shadows, its golden eyes piercing. A troupe of playful monkeys swings from vines, their expressions lively and dynamic. A slow-moving sloth clings to a tree branch, blending into the foliage. Atmospheric elements:  Soft mist lingers near the forest floor, adding depth. Dragonflies and butterflies hover near the water's edge. Distant bird calls and rustling leaves create an immersive ambiance. Cinematic composition with balanced lighting—sunbeams piercing through the canopy in a god-ray effect. Depth of field focuses sharply on the tiger while softly blurring the background for realism. Shot with a high-resolution DSLR style for maximum detail, 8K quality. Ultra HD, National Geographic-style wildlife photography.",
                 "timestamp": 1755159013677,
             },
-            {
-                "isImage": true,
-                "isPublished": true,
-                "role": "assistant",
-                "content": ai_image2,
-                "timestamp": 1755159034238,
-            },
+
             {
                 "isImage": false,
                 "isPublished": false,
@@ -200,13 +143,7 @@ export const dummyChats = [
                 "content": "generate a image of gaming pc setup in a room in realistic style",
                 "timestamp": 1755159264109,
             },
-            {
-                "isImage": true,
-                "isPublished": true,
-                "role": "assistant",
-                "content": ai_image3,
-                "timestamp": 1755159273878,
-            },
+
             {
                 "isImage": false,
                 "isPublished": false,
@@ -228,13 +165,7 @@ export const dummyChats = [
                 "content": "Generate a image nature with trees  in realistic style",
                 "timestamp": 1755160243315,
             },
-            {
-                "isImage": true,
-                "isPublished": true,
-                "role": "assistant",
-                "content": ai_image4,
-                "timestamp": 1755160254161,
-            },
+
             {
                 "isImage": false,
                 "isPublished": false,
@@ -242,13 +173,7 @@ export const dummyChats = [
                 "content": "a gaming pc setup ",
                 "timestamp": 1755163772103,
             },
-            {
-                "isImage": true,
-                "isPublished": true,
-                "role": "assistant",
-                "content": ai_image6,
-                "timestamp": 1755163783470,
-            },
+
             {
                 "isImage": false,
                 "isPublished": false,
@@ -256,13 +181,7 @@ export const dummyChats = [
                 "content": "a streaming setup with mic and accessory's ",
                 "timestamp": 1755163990514,
             },
-            {
-                "isImage": true,
-                "isPublished": true,
-                "role": "assistant",
-                "content": ai_image7,
-                "timestamp": 1755164001928,
-            }
+
             
         ],
         "createdAt": "2025-08-13T17:29:52.421Z",
@@ -280,49 +199,3 @@ export const dummyChats = [
     }
 ]
 
-export const dummyPublishedImages = [
-    {
-        "imageUrl": ai_image11,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image10,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image9,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image8,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image7,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image6,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image5,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image4,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image3,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image2,
-        "userName": "GreatStack"
-    },
-    {
-        "imageUrl": ai_image1,
-        "userName": "GreatStack"
-    }
-]
