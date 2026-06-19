@@ -30,7 +30,7 @@ export const assets = {
 
 export const dummyUserData = {
     "_id": "689c6deed410acddc0d95a0e",
-    "name": "GreatStack",
+    "name": "user1",
     "email": "admin@example.com",
     "password": "$2b$10$VESVdPDjL5LF.KCU6jKyqeXNSLASAAfpR2kkIJExtMO.PJvZJAudy",
     "credits": 200,
@@ -44,14 +44,14 @@ export const dummyChats = [
     {
         "_id": "689de4bbaa932dc3a8ef6cd7",
         "userId": "689c6deed410acddc0d95a0e",
-        "userName": "GreatStack",
+        "userName": "user1",
         "name": "New Chat",
         "messages": [
             {
                 "isImage": false,
                 "isPublished": false,
                 "role": "user",
-                "content": "a boy running on water",
+                "content": "Wheets getting dry",
                 "timestamp": 1755178179612,
             },
 
