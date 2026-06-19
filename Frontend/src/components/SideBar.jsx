@@ -2,7 +2,7 @@ import React, {  useState } from 'react'
 import { useAppContext } from '../context/AppContext'
 import { assets } from '../assets/assets'
 import logo from '../assets/logo.png'
-
+import { Search } from "lucide-react";
 
 
 export const SideBar = ()=>  {
@@ -22,16 +22,16 @@ className="w-full justify-start gap-2 h-9 text-sm bg-primary text-primary-foregr
           </button>
 
           <div className='flex items-center gap-2 p-3 mt-4 '> 
-            <img src = {assets.search_icon} className = 'w-4'/>
+            <Search className="w-4 h-4 text-gray-700" />
             
 
-<input onChange={(e)=>setSearch(e. target. value)} value={search} type="text"
+<input onChange={(e)=>setSearch(e.target.value)} value={search} type="text"
 placeholder='Search conversations' className='text-xs
 placeholder:text-gray-400 outline-none'/>
 </div>
 
-{chats.length > 0 }
-I
+{/* {chats.length > 0 } */}
+
         
     </div>
   )
