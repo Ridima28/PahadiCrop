@@ -30,8 +30,7 @@ export const SideBar = () => {
 
       <div
         className={`
-          relative z-20 flex flex-col h-screen bg-[#F5F3EE] border-r border-gray-200
-          transition-all duration-300 ease-in-out shrink-0
+          relative z-20 flex flex-col h-screen bg-[#F5F3EE] border-r border-gray-200 transition-all duration-300 ease-in-out shrink-0
           ${isExpanded ? 'w-72' : 'w-14'}
           ${isExpanded ? 'fixed sm:relative' : 'relative'}
         `}
