@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { assets } from "../assets/assets";
 import moment from "moment";
+import Markdown from "react-markdown";
+import Prism from 'prismjs'
 
 export const Message = ({ message }) => {
+  useEffect(() => {
+    Prism.highlightAll
+  },[message.content])
+
+
+
   return (
     <div>
       {message.role === "user" ? (
@@ -23,8 +31,8 @@ export const Message = ({ message }) => {
               className="w-full max-w-md mt-2 rounded-md"
             />
           ) : (
-            <div className="text-sm  reset-tw">
-              {message.content}
+            <div className="text-sm reset-tw">
+              <Markdown>{message.content}</Markdown>
             </div>
           )}
 
