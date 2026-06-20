@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useAppContext } from '../context/AppContext'
 import logoIcon from '../assets/logo-icon.png';
+import { Message } from './Message';
 
 export const ChatBox = () => {
   const [message, setMessage] = useState([])
@@ -9,7 +10,7 @@ export const ChatBox = () => {
 
   useEffect(() => {
     if (selectedChat) {
-      setMessage(selectedChat.message || [])
+      setMessage(selectedChat.messages || [])
     }
   }, [selectedChat])
 
@@ -25,7 +26,7 @@ export const ChatBox = () => {
             </p>
           </div>
         )}
-        {message.map((messages,index) => {})}
+        {message.map((messages,index) => <Message key = {index} message={messages}/>)}
       </div>
 
       <form>
