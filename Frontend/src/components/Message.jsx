@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import moment from "moment";
 
 export const Message = ({ message }) => {
   return (
@@ -8,7 +9,8 @@ export const Message = ({ message }) => {
         <div className="flex items-start justify-end my-4 gap-2">
           <div className="flex flex-col gap-2 p-2 px-4 bg-slate-50 border border-[#80609F]/30 rounded-md max-w-2xl">
             <p className="text-sm">{message.content}</p>
-            <span className="text-xs text-gray-400">{message.timestamp}</span>
+            <span className="text-xs text-gray-400">  {moment(message.timestamp).fromNow()}
+</span>
           </div>
 
           <img src={assets.user_icon} className="w-8 rounded-full" />
@@ -27,11 +29,7 @@ export const Message = ({ message }) => {
           )}
 
 <span className="text-xs text-gray-400">
-  {new Date(message.timestamp).toLocaleTimeString('en-IN', {
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: true
-  })}
+  {moment(message.timestamp).fromNow()}
 </span>
         </div>
       )}
