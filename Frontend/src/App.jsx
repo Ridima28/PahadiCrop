@@ -26,9 +26,9 @@ export default function App() {
         path="/"
         element={<Navigate to={isLoggedIn ? "/chat" : "/login"} />}
       /> */}
-<Route path="/" element={<MainChat />} />
-<Route path="/loading" element={<Loading />} />
-  {/* remove this when login is done */}
+<Route path="/" element={<MainChat />} />  {/* remove this when login is done */}
+<Route path="/loading" element={<Loading />} />   {/* add it in a way that, if user is not logged in, loading will take us to login page */}
+
     </Routes>
   );
 }
